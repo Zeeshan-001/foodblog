@@ -1,8 +1,9 @@
-import Link from "next/link";
 import Image from "next/image";
 import classes from "./main-header.module.css";
 import logoImg from "@/assets/logo.webp";
 import HeaderMainBackground from "./headerMain-background";
+import NavLink from "./nav-link";
+import Link from "next/link";
 
 function MainHeader() {
   return (
@@ -14,17 +15,14 @@ function MainHeader() {
           Genuss neu gedacht
         </Link>
 
-        {/* Main Navbar */}
         <nav className={classes.nav}>
           <ul>
-            {/* Route One */}
             <li>
-              <Link href="/meals">Gerichte entdecken</Link>
+              <NavLink href="/meals">Gerichte durchsuchen</NavLink>
             </li>
 
-            {/* Route Second */}
             <li>
-              <Link href="/community">Treffpunkt für Essensliebhaber</Link>
+              <NavLink href="/community">Essen-Community</NavLink>
             </li>
           </ul>
         </nav>
