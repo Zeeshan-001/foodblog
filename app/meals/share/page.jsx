@@ -1,6 +1,9 @@
 import classes from "./page.module.css";
+import { shareMeal } from "@/lib/action";
+import ImagePicker from "@/components/meals/image-picker";
 
-export default function TeilenMahlzeitSeite() {
+// ShareMealPage(formData)
+export default async function ShareMealPage() {
   return (
     <>
       <header className={classes.header}>
@@ -10,7 +13,7 @@ export default function TeilenMahlzeitSeite() {
         <p>Oder ein anderes Gericht, das du teilen möchtest!</p>
       </header>
       <main className={classes.main}>
-        <form className={classes.form}>
+        <form className={classes.form} action={shareMeal}>
           <div className={classes.row}>
             <p>
               <label htmlFor="name">Dein Name</label>
@@ -38,7 +41,7 @@ export default function TeilenMahlzeitSeite() {
               required
             ></textarea>
           </p>
-          BILDAUSWAHL
+          <ImagePicker name="image" />
           <p className={classes.actions}>
             <button type="submit">Gericht teilen</button>
           </p>
