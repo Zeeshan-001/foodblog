@@ -40,7 +40,7 @@ function ImagePicker({ label, name }) {
           className={classes.input}
           type="file"
           id="iamge"
-          accept="'image/png, image/jpeg"
+          accept="'image/png, image/jpeg, image/webp"
           name={name}
           ref={imageInputRef} // Input Reference
           //   multiple

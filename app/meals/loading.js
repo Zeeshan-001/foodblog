@@ -1,5 +1,12 @@
 import classes from "./loading.module.css";
 
 export default function MealsLoadingPage() {
-  return <p className={classes.loading}>Loading . . .</p>;
+  return (
+    <div className={classes["loading-dots"]}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  );
 }
