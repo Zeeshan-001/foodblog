@@ -5,6 +5,7 @@ import ImageSlider from "@/components/images/image-slider";
 export default function Home() {
   return (
     <>
+      {/* Header */}
       <header className={classes.header}>
         <div className={classes.slideshow}>
           <ImageSlider />
@@ -20,9 +21,10 @@ export default function Home() {
           </div>
         </div>
       </header>
+      {/* Main */}
       <main>
         <section className={classes.section}>
-          <h2>So funktioniert's</h2>
+          <h2>So funktioniert</h2>
           <p>
             NextLevel Food ist eine Plattform für Foodies, um ihre
             Lieblingsrezepte mit der Welt zu teilen. Es ist ein Ort, um neue

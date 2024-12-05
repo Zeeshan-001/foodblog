@@ -4,10 +4,12 @@ import logoImg from "@/assets/logo.webp";
 import HeaderMainBackground from "./headerMain-background";
 import NavLink from "./nav-link";
 import Link from "next/link";
+import SocialLinks from "./social-links";
 
 function MainHeader() {
   return (
     <>
+      <SocialLinks />
       <HeaderMainBackground />
       <header className={classes.header}>
         <Link className={classes.logo} href="/">

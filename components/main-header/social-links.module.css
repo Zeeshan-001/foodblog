@@ -1,0 +1,22 @@
+.social-links {
+  background-color: #000;
+  width: 100%;
+  padding: 0.1rem 0 0.01rem 0;
+}
+
+.social-links ul {
+  display: flex;
+  column-gap: 3rem;
+  list-style: none;
+}
+
+.social-links ul li {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+.social-links ul li:hover {
+  border-bottom: 1px solid #fff;
+}
