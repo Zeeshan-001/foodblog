@@ -1,10 +1,10 @@
-import Image from "next/image";
-import classes from "./main-header.module.css";
-import logoImg from "@/assets/logo.webp";
-import HeaderMainBackground from "./headerMain-background";
-import NavLink from "./nav-link";
 import Link from "next/link";
+import Image from "next/image";
+import NavLink from "./nav-link";
+import logoImg from "@/assets/logo.webp";
 import SocialLinks from "./social-links";
+import classes from "./main-header.module.css";
+import HeaderMainBackground from "./headerMain-background";
 
 function MainHeader() {
   return (
